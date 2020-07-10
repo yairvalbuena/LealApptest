@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="10dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/checkT"
+            android:checked="true"
+            android:textOn="@null"
+            android:textOff="@null"
+            android:background="@drawable/tooglebtn"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:id="@+id/textComercio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Comercio: "
+            android:layout_toRightOf="@id/checkT"
+            android:textStyle="bold"
+           />
+
+        <TextView
+            android:id="@+id/Comercio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comercio"
+            android:layout_toRightOf="@id/textComercio"/>
+
+
+        <TextView
+            android:id="@+id/textbranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Rama: "
+            android:layout_toRightOf="@id/checkT"
+            android:layout_below="@+id/textComercio"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/Branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rama"
+            android:layout_toRightOf="@id/textbranch"
+            android:layout_below="@+id/textComercio"/>
+
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Fecha de Transacción: "
+            android:layout_toRightOf="@id/checkT"
+            android:layout_below="@+id/textbranch"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fechas"
+            android:layout_toRightOf="@id/textDate"
+            android:layout_below="@+id/textbranch"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
